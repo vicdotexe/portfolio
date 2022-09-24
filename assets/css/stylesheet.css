@@ -1,0 +1,116 @@
+:root {
+    --accent: rgb(67, 179, 144);
+    --accent2: rgb(203, 179, 59);
+    --darkBackground: rgb(46, 46, 46);
+    --lightBackground: rgb(68, 68, 68);
+    --defaultTextColor: white;
+    --navigationFontColor: var(--accent2);
+    --sectionBorders: var(--accent2);
+}
+
+* {
+    color: var(--defaultTextColor);
+}
+
+main {
+    background: var(--lightBackground);
+}
+
+header h1 {
+    font-size: 48px;
+    display: inline;
+    color: var(--darkBackground);
+    background: var(--accent);
+    padding: 5px 10px 0px 10px;
+    border: 2px solid var(--accent2);
+    border-radius: 25px 0px;
+}
+
+
+
+header {
+    display: flex;
+    background: var(--darkBackground);
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: inline;
+    height:fit-content;
+    margin-top: 10px;
+}
+
+nav a {
+    color: var(--navigationFontColor);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color:rgb(67, 179, 144);
+}
+
+nav ul li{
+    display: inline;
+    margin: 0px 5px;
+}
+
+body{
+    background: var(--lightBackground);
+}
+
+main {
+}
+.main-section {
+    display: flex;
+    flex-grow: 1px;
+    border: 1px solid var(--darkBackground);
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.main-section h2 {
+    font-size: 36px;
+    color: var(--accent);
+    padding: 10px 25px;
+    white-space: nowrap;
+    width: 200px;
+}
+
+.section-content{
+    margin: 5px;
+    padding: 10px;
+    border-left: 1px solid var(--darkBackground);
+}
+
+footer{
+    padding: 10px;
+    background: var(--darkBackground);
+    color: var(--accent);
+}
+
+footer p{
+    text-align: center;
+}
+
+@media screen and (max-width: 992px){
+    header {
+        flex-direction: column;
+    }
+    .main-section{
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    .main-section{
+        flex-direction: column;
+    }
+    .section-content{
+        border: 0;
+    }
+}
