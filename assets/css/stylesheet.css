@@ -71,15 +71,11 @@ nav a {
     padding: 5px;
     margin: 0 10px;
     border-radius: 10px;
+    border: 1px solid rgb(35, 35, 35);
 }
 
 nav a:hover {
     color:rgb(67, 179, 144);
-}
-
-nav ul li{
-    display: inline;
-    margin: 0px 10px;
 }
 
 /* figure */
@@ -94,9 +90,11 @@ figure {
 /* main sections */
 .main-section {
     display: flex;
+    justify-content: flex-start;
     border: 1px solid var(--darkBackground);
-    border-radius: 10px 0px 10px 10px;
+    border-radius: 5px 10px 10px 10px;
     margin: 15px 5px;
+    padding-bottom:5px;
     background-color: rgb(82, 82, 82);
 }
 
@@ -105,11 +103,12 @@ figure {
     font-size: 32px;
     color: white;
     white-space: nowrap;
+    font-family:monospace;
     padding: 5px 15px;
     height:fit-content;
     text-align: center;
     background: var(--primaryGradiant);
-    border-radius: 10px 0px 35px 0px;
+    border-radius: 5px 0px 35px 0px;
     filter: grayscale(50%);
     border-bottom: 1px solid var(--darkBackground);
     border-right: 1px solid var(--darkBackground);
@@ -131,9 +130,15 @@ figure {
 
 /* main section-content */
 .section-content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 5px;
     padding: 10px;
-    border-left: 1px solid var(--darkBackground);
+    background-color: rgb(93, 93, 93);
+    border-radius: 10px;
+    width:100%;
+    /* border-left: 1px dashed var(--darkBackground); */
 }
 
 /* work items view */
@@ -142,18 +147,21 @@ figure {
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
 }
 
 /* work entry */
 .work-entry {
     border: 1px solid white;
     border-radius: 25px;
-    width: 49%;
     position:relative;
-    margin-bottom: 10px;
+    margin: 5px 0;
     height: 200px;
     transition: 0.3s;
+    width: 48%;
+}
+
+.first-item{
+    width:100%;
 }
 
 .work-entry h3 {
@@ -177,9 +185,7 @@ figure {
     transition: 0.3s;
 }
 
-.first-item{
-    width: 100%;
-}
+
 
 .work-entry:hover{
     border-color: var(--glow);
@@ -241,13 +247,20 @@ footer p{
     }
     .main-section{
         flex-direction: column;
+        border-top-left-radius: 10px;
     }
     .section-content{
-        border: 0;
+        align-self:center;
+        width:98%;
     }
     .main-section h2{
         padding-bottom: 5px;
         border-bottom: 1px solid var(--darkBackground);
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 0;
+        border-right: none;
+        
     }
     nav{
         width: 100%;
@@ -255,8 +268,5 @@ footer p{
     }
     figure{
         height: 150px;
-    }
-    header h1{
-        margin-left: 0;
     }
 }
