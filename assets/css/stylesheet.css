@@ -1,12 +1,13 @@
 :root {
-    --accent: rgb(67, 179, 144);
-    --accent2: rgb(203, 179, 59);
+    --accent: rgb(77, 158, 169);
+    --glow: rgb(76, 201, 238);
+    --accent2: rgb(168, 151, 67);
     --darkBackground: rgb(46, 46, 46);
     --lightBackground: rgb(68, 68, 68);
     --defaultTextColor: white;
     --navigationFontColor: var(--accent2);
     --sectionBorders: var(--accent2);
-    --primaryGradiant: linear-gradient(190deg, var(--accent), var(--accent2));
+    --primaryGradiant: linear-gradient(190deg, rgb(70, 112, 97), rgb(58, 140, 146));
 }
 
 * {
@@ -33,18 +34,19 @@ header {
     justify-content: space-between;
     align-items: center;
     border-radius: 0 0 25px 25px;
+    border-bottom: 1px solid black;
 }
 
 header h1 {
     font-size: 48px;
-    font-family:'Courier New', Courier, monospace;
-    font-style:italic;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
     display: inline;
-    color: var(--darkBackground);
+    color: rgb(208, 207, 207);
     background: var(--primaryGradiant);
-    padding: 5px 10px 0px 10px;
+    padding: 5px 10px 5px 10px;
     border: 2px solid var(--accent2);
-    border-radius: 25px 0px;
+    border-radius: 0px 0px 25px 25px;
 }
 
 /* Navigation */
@@ -61,7 +63,7 @@ nav {
 nav a {
     color: var(--navigationFontColor);
     text-decoration: none;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Courier New', Courier, monospace;
     font-size: 20px;
     font-weight: bold;
     white-space: nowrap;
@@ -85,25 +87,32 @@ figure {
     background-image: linear-gradient(var(--lightBackground),var(--lightBackground)),url(../images/figure.PNG);
     background-blend-mode:lighten;
     width: 100%;
-    height: 200px;
+    height: 110px;
     background-position: bottom;
 }
 
 /* main sections */
 .main-section {
     display: flex;
-    border: 2px solid var(--darkBackground);
-    border-radius: 10px;
-    margin: 5px;
+    border: 1px solid var(--darkBackground);
+    border-radius: 10px 0px 10px 10px;
+    margin: 15px 5px;
+    background-color: rgb(82, 82, 82);
 }
 
 .main-section h2 {
-    min-width: 150px;
-    margin: 10px 15px;
+    min-width: 180px;
     font-size: 32px;
-    color: var(--accent);
+    color: white;
     white-space: nowrap;
-    padding:0;
+    padding: 5px 15px;
+    height:fit-content;
+    text-align: center;
+    background: var(--primaryGradiant);
+    border-radius: 10px 0px 35px 0px;
+    filter: grayscale(50%);
+    border-bottom: 1px solid var(--darkBackground);
+    border-right: 1px solid var(--darkBackground);
 }
 
 #about-me
@@ -140,9 +149,9 @@ figure {
 .work-entry {
     border: 1px solid white;
     border-radius: 25px;
-    width: 48%;
+    width: 49%;
     position:relative;
-    margin: 10px 0px;
+    margin-bottom: 10px;
     height: 200px;
     transition: 0.3s;
 }
@@ -173,15 +182,15 @@ figure {
 }
 
 .work-entry:hover{
-    border-color: var(--accent);
-    box-shadow: var(--accent) 0px 0px 15px, inset var(--accent) 0px 0px 15px;
+    border-color: var(--glow);
+    box-shadow: var(--glow) 0px 0px 15px, inset var(--glow) 0px 0px 15px;
     
 }
 
 .work-entry:hover h3{
-    border-color: var(--accent);
-    box-shadow: var(--accent) 0px 0px 15px, inset var(--accent) 0px 0px 15px;
-    color: var(--accent2);
+    border-color: var(--glow);
+    box-shadow: var(--glow) 0px 0px 15px, inset var(--glow) 0px 0px 15px;
+    /* color: rgb(0, 170, 255); */
 }
 
 .work-entry:hover img{
@@ -218,6 +227,12 @@ footer p{
         width: 100%;
         justify-content: space-around;
     }
+    figure{
+        height: 150px;
+    }
+    header h1{
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -237,5 +252,11 @@ footer p{
     nav{
         width: 100%;
         justify-content: space-around;
+    }
+    figure{
+        height: 150px;
+    }
+    header h1{
+        margin-left: 0;
     }
 }
