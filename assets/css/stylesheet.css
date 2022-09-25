@@ -93,9 +93,10 @@ figure {
     display: flex;
     justify-content: flex-start;
     border: 1px solid var(--darkBackground);
-    border-radius: 5px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
     margin: 15px 5px;
-    background-color: rgb(82, 82, 82);
+    /* background-color: rgb(82, 82, 82); */
+    background-color: rgb(93, 93, 93);
     box-shadow:rgb(35, 35, 35) 4px 4px 8px;
 }
 
@@ -108,7 +109,7 @@ figure {
     padding: 5px 15px;
     height:fit-content;
     background: var(--primaryGradiant);
-    border-radius: 5px 0px 0px 0px;
+    border-radius: 10px 0px 0px 0px;
     filter: grayscale(15%);
     overflow: hidden;
 }
@@ -136,10 +137,11 @@ figure {
     justify-content: center;
     margin: 10px;
     padding: 10px;
-    background-color: rgb(93, 93, 93);
+    /* background-color: rgb(93, 93, 93); */
+    background-color: rgb(82, 82, 82);
     border-radius: 10px;
     width:100%;
-    box-shadow:rgb(35, 35, 35) 0 0 6px;
+    box-shadow:inset rgb(35, 35, 35) 1px 1px 5px;
     /* border-left: 1px dashed var(--darkBackground); */
 }
 
@@ -160,6 +162,7 @@ figure {
     height: 200px;
     transition: 0.3s;
     width: 49%;
+    box-shadow:rgb(35, 35, 35) 3px 3px 5px;
 }
 
 #first-item{
@@ -233,7 +236,7 @@ footer p{
         width:40px;
         height: 60px;
         transform:rotate(45deg);
-        background-color:var(--mediumBackground);
+        background-color:rgb(93,93,93);
     }
     
 }
