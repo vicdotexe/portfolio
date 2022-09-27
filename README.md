@@ -3,12 +3,21 @@
 ## Description
 A class project website display of my current portfolio.
 
+## Screenshot
+![preview of the website!](./assets/images/screenshot.PNG)
+
+## Deployed
+[https://vicdotexe.github.io/portfolio/](https://vicdotexe.github.io/portfolio)
+
+## Assignment
 ### *User Story*
+```
 AS AN employer
 I WANT to view a potential employee's deployed portfolio of work samples
 SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
-
+```
 ### *Acceptance Criteria*
+```
 GIVEN I need to sample a potential employee's previous work:
 
 WHEN I load their portfolio,
@@ -28,12 +37,7 @@ THEN I am taken to that deployed application.
 
 WHEN I resize the page or view the site on various screens and devices,
 THEN I am presented with a responsive layout that adapts to my viewport.
-
-## Screenshot
-![preview of the website!](./assets/images/screenshot.PNG)
-
-## Deployed
-[https://vicdotexe.github.io/portfolio/](https://vicdotexe.github.io/portfolio)
+```
 
 ## License
 [MIT Licence](https://github.com/vicdotexe/portfolio/blob/main/LICENSE)
