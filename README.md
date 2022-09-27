@@ -4,7 +4,8 @@
 A website display of my current portfolio.
 
 ## Screenshot
-![preview of the website!](/screenshot.png)
+![preview of the website!](./assets/images/screenshot.PNG)
+
 ## Deployed
 [https://vicdotexe.github.io/portfolio/](https://vicdotexe.github.io/portfolio)
 
